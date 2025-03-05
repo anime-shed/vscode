@@ -11,7 +11,7 @@ APP_NAME="@@APPNAME@@"
 QUALITY="@@QUALITY@@"
 NAME="@@NAME@@"
 SERVERDATAFOLDER="@@SERVERDATAFOLDER@@"
-VSCODE_PATH="$(dirname "$(dirname "$(realpath "$0")")")"
+VSCODE_PATH="$(cd "$(dirname "$0")"/.. && pwd)"
 ELECTRON="$VSCODE_PATH/$NAME.exe"
 
 IN_WSL=false
